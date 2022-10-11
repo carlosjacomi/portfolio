@@ -1,0 +1,79 @@
+/* Reglas Principales*/
+:root{
+    --html-color:#ff3d00;
+    --css-color:#2091eb;
+    --js-color:#e4d04b;
+    --bootstrap-color:#583979;
+    --github-color:#24292f;
+    --php-color:#777BB3;
+    --mysql-color: #f29d17;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+#titulo h1{
+    font-size: 80px;
+    letter-spacing: -7px;
+}
+
+
+#sidebarMenu{
+    height: 100vh;
+    z-index: 2;
+}
+
+#avatar img{
+    max-width: 200px;
+}
+
+#html-ico:hover{color: var(--html-color);}
+#css-ico:hover{color: var(--css-color);}
+#js-ico:hover{color: var(--js-color);}
+#bootstrap-ico:hover{color: var(--bootstrap-color);}
+
+
+
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#carousel img{
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.badge-html{background-color: var(--html-color);}
+.badge-css{background-color: var(--css-color);}
+.badge-js{background-color: var(--js-color);}
+.badge-php{background-color: var(--php-color);}
+.badge-mysql{background-color: var(--mysql-color);}
+
+
+#github-ico:hover{
+    color: var(--github-color);
+}
+
+footer #comillas{
+    border-right: 1px solid  #333333 ;
+}
+
+@media (max-width: 430px) { 
+    footer #comillas {display: none;}
+    #titulo h1 {
+        font-size: 50px;
+        letter-spacing: -4px;
+    }
+    .fa-7x{font-size: 3em !important;}
+}
+
+@media screen and (min-width:431px) and (max-width:1000px) { 
+    .fa-7x{font-size: 4em !important;}
+}
