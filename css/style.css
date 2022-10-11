@@ -52,6 +52,7 @@ body{
 
 .badge-html{background-color: var(--html-color);}
 .badge-css{background-color: var(--css-color);}
+.badge-bootstrap{background-color: var(--bootstrap-color);}
 .badge-js{background-color: var(--js-color);}
 .badge-php{background-color: var(--php-color);}
 .badge-mysql{background-color: var(--mysql-color);}
