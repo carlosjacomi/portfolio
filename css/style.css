@@ -13,19 +13,32 @@ body{
     box-sizing: border-box;
 }
 
-#titulo h1{
-    font-size: 80px;
-    letter-spacing: -7px;
+.navbar-nav {
+    flex-flow: row nowrap;
 }
 
+.navbar {
+    flex-flow: row nowrap;
+    display: inline-flex; 
+}
 
-#sidebarMenu{
-    height: 100vh;
-    z-index: 2;
+#titulo h1{
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+#titulo h2{
+    font-size: 35px;
+    letter-spacing: -2px;
 }
 
 #avatar img{
     max-width: 200px;
+}
+
+#info-content img{
+    max-height: 100px;
+    max-width: 220px;
 }
 
 #html-ico:hover{color: var(--html-color);}
@@ -33,21 +46,31 @@ body{
 #js-ico:hover{color: var(--js-color);}
 #bootstrap-ico:hover{color: var(--bootstrap-color);}
 
-
-
-#carousel .overlay{
+.overlay{
+    opacity: 0;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
-#carousel img{
-    min-height: 100%;
-    object-fit: cover;
+#btnVerProyecto{ z-index: 2;}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+#tecladoLeft {
+    background: url("https://tajibo.com/portfolio-repositorio/img/teclado.png") right 0 bottom 0 no-repeat;
+    background-size: cover;
+}
+
+#tecladoRight {
+    background: url("https://tajibo.com/portfolio-repositorio/img/teclado.png") left 0 bottom 0 no-repeat;
+    background-size: cover;
 }
 
 .badge-html{background-color: var(--html-color);}
@@ -57,9 +80,16 @@ body{
 .badge-php{background-color: var(--php-color);}
 .badge-mysql{background-color: var(--mysql-color);}
 
-
 #github-ico:hover{
     color: var(--github-color);
+}
+
+#mouse{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 240px;
+    z-index: 0;
 }
 
 footer #comillas{
@@ -67,14 +97,11 @@ footer #comillas{
 }
 
 @media (max-width: 430px) { 
+    #titulo h1 {letter-spacing: -2px;}
+    #main .fa-4x {font-size: 3em;}
     footer #comillas {display: none;}
-    #titulo h1 {
-        font-size: 50px;
-        letter-spacing: -4px;
-    }
-    .fa-7x{font-size: 3em !important;}
 }
 
 @media screen and (min-width:431px) and (max-width:1000px) { 
-    .fa-7x{font-size: 4em !important;}
 }
+
